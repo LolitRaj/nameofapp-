@@ -1,0 +1,13 @@
+<?php
+
+$con = mysqli_connect("localhost","id20836734_raz","4Dr%g$09","id20836734_joy");
+
+if(mysqli_connect_errno)
+	echo "Could not connected to database <br>". mysqli_connect_error();
+else 
+	echo "successfully";
+$sql = "INSERT INTO Jason-table (name,mobile,email) VALUES('jony', '89976','jony@gmail.com') ";
+mysqli_query($con,$sql);
+
+
+?>
